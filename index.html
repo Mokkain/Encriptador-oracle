@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de textos</title>
+</head>
+<body>
+    <header>
+        <div>
+           <img src="imagenes/Logo.png" alt="logo de alura" class="logo"> 
+        </div>
+    </header>
+    <main>
+        <section class="seccion-encriptar">
+            <textarea class="msj-encriptar" cols="40" rows="11" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="advertencia">
+                <img src="imagenes/Simbolo.png" alt="Símbolo de exclamación" class="simbolo">
+                <h6 class="texto-advertencia">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()" disabled>Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()" disabled>Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion-desencriptar">
+            <div class="leyenda-busqueda">
+                <img src="imagenes/Muñeco.png" alt="Muñeco de búsqueda" class="muñeco">
+                <h4>Ningún mensaje fue encontrado</h4>
+                <h5>Ingresa el texto que desees encriptar o desencriptar.</h5>
+            </div>
+            <textarea class="msj-encriptado" cols="25" rows="10" disabled> </textarea>
+            <div class="copiar">
+                <button class="btn-copiar" onclick="msjCopiar()" disabled>Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy Copyright. Todos los derechos reservados - Daniela Ventura - 2024</p>
+        <div class="redes-sociales">
+            <a class="enlaces" href="https://github.com/Mokkain" target="_blank">
+                <img src="imagenes/Github.png" class="red-logo" alt="GitHub" target="_blank">
+            </a>
+            <a class="enlaces" href="https://www.linkedin.com/in/daniela-ventura-lcc/" target="_blank">
+                <img src="imagenes/Linkedin.png" class="red-logo" alt="Linkedin">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
